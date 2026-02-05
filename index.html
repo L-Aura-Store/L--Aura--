@@ -166,41 +166,58 @@
 
     </div>
 </li>
-            <li class="menu-item">WATCHES
-    <div class="mega-menu" style="display: flex; flex-direction: column; width: 80vw; left: 50%; transform: translateX(-50%); background: #111; padding: 40px; border-bottom: 3px solid #d4af37; box-shadow: 0px 10px 40px rgba(0,0,0,0.8); position: absolute;">
+           <li class="menu-item">WATCHES
+    <div class="mega-menu" style="display: flex; flex-direction: column; width: 70vw; left: 50%; transform: translateX(-50%); background: #111; padding: 25px 40px; border-bottom: 2px solid #d4af37; box-shadow: 0px 10px 40px rgba(0,0,0,0.8); position: absolute;">
         
-        <h4 style="color: #d4af37; border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 25px; font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase;">TOP MODELS (OVER $800)</h4>
+        <h4 style="color: #d4af37; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 20px; font-size: 1rem; letter-spacing: 1px; text-transform: uppercase;">TOP MODELS (OVER $800)</h4>
         
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+        <style>
+            .compact-list li {
+                color: #888;
+                padding: 3px 0; /* පේළි අතර ඉඩ අඩු කර ඇත */
+                transition: 0.3s ease;
+                cursor: pointer;
+                font-size: 0.9rem; /* අකුරු පොඩ්ඩක් කුඩා කර ඇත */
+            }
+            .compact-list li:hover {
+                color: #fff;
+                padding-left: 8px;
+            }
+            .explore-link:hover {
+                color: #fff !important;
+            }
+        </style>
+
+        <div class="compact-list" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
             
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                <li style="color: #ccc;">Rolex Datejust 31/36</li>
-                <li style="color: #ccc;">Rolex Lady-Datejust</li>
-                <li style="color: #ccc;">Omega Constellation</li>
-                <li style="color: #ccc;">Omega Seamaster Aqua Terra</li>
-                <li style="color: #ccc;">Cartier Tank Must / Louis</li>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                <li>Rolex Datejust 31/36</li>
+                <li>Rolex Lady-Datejust</li>
+                <li>Omega Constellation</li>
+                <li>Omega Seamaster Aqua Terra</li>
+                <li>Cartier Tank Must / Louis</li>
             </ul>
 
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                <li style="color: #ccc;">Cartier Santos de Cartier</li>
-                <li style="color: #ccc;">Cartier Ballon Bleu</li>
-                <li style="color: #ccc;">Tudor Black Bay 31/36/39</li>
-                <li style="color: #ccc;">Tudor Royal</li>
-                <li style="color: #ccc;">Longines DolceVita</li>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                <li>Cartier Santos de Cartier</li>
+                <li>Cartier Ballon Bleu</li>
+                <li>Tudor Black Bay 31/36/39</li>
+                <li>Tudor Royal</li>
+                <li>Longines DolceVita</li>
             </ul>
 
-            <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-                <li style="color: #ccc;">Longines La Grande Classique</li>
-                <li style="color: #ccc;">TAG Heuer Carrera Lady</li>
-                <li style="color: #ccc;">TAG Heuer Aquaracer</li>
-                <li style="color: #ccc;">Tissot PRX Powermatic 80 (18K)</li>
-                <li style="color: #ccc;">Breitling Navitimer 32/36</li>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                <li>Longines La Grande Classique</li>
+                <li>TAG Heuer Carrera Lady</li>
+                <li>TAG Heuer Aquaracer</li>
+                <li>Tissot PRX Powermatic 80 (18K)</li>
+                <li>Breitling Navitimer 32/36</li>
             </ul>
 
         </div>
 
-        <div style="margin-top: 30px; border-top: 1px solid #333; padding-top: 20px; text-align: left;">
-            <span style="color: #d4af37; font-weight: bold; font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 1px;">EXPLORE ALL MODELS →</span>
+        <div style="margin-top: 20px; border-top: 1px solid #333; padding-top: 15px;">
+            <span class="explore-link" style="color: #d4af37; font-weight: bold; font-size: 0.9rem; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;">EXPLORE ALL MODELS →</span>
         </div>
 
     </div>
