@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-AURA | 50+ Global Luxury Brands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 p-6">
+        
+        <!-- FILTER SIDEBAR -->
+        <aside class="w-full md:w-64 space-y-8">
+            <div>
+                <h4 class="cinzel text-yellow-500 mb-4 border-b border-zinc-800 pb-2">Category</h4>
+                <div class="space-y-2">
+                    <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
+                        <input type="checkbox" value="Men" class="filter-gender accent-yellow-600" onchange="filterWatches()"> Men
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer text-sm text-gray-400 hover:text-white">
+                        <input type="checkbox" value="Women" class="filter-gender accent-yellow-600" onchange="filterWatches()"> Women
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="cinzel text-yellow-500 mb-4 border-b border-zinc-800 pb-2">Top 50 Brands</h4>
+                <div class="brand-list-container space-y-2" id="brand-filters">
+                    <!-- Brands will be injected here -->
+                </div>
+            </div>
+
+            <div>
+                <h4 class="cinzel text-yellow-500 mb-4 border-b border-zinc-800 pb-2">Price Range</h4>
+                <select id="filter-price" class="w-full bg-zinc-900 border border-zinc-800 p-2 text-sm" onchange="filterWatches()">
+                    <option value="all">All Prices</option>
+                    <option value="entry">$100 - $1,000</option>
+                    <option value="mid">$1,000 - $10,000</option>
+                    <option value="high">$10,000+</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <main class="flex-1">
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Products -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
